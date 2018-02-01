@@ -1,3 +1,5 @@
+# https://suitemel.github.io/Psychic-Game/
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/SuiteMel/Psychic-Game/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
