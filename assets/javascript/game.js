@@ -8,20 +8,27 @@ var guess = 9;
 
 var letters = [];
 
-var goal = alphabet[Math.floor((Math.random() * 26)+ 0)];
+var goal;
 
-
+var wins = document.querySelector("#wins");
+var loss = document.querySelector("#loses");
+var guesses = document.querySelector("#guesses");
+var letter = document.querySelector("#letters")
 
 function renderGame() {
-  document.querySelector("#wins").innerHTML = "Wins: " + win;
-  document.querySelector("#loses").innerHTML = "Losses: " + losses;
-  document.querySelector("#guesses").innerHTML = "Guesses Left: " + guess;
-  document.querySelector("#letters").innerHTML = "Your Guesses so far: " + letters;
+  wins.innerHTML = "Wins: " + win;
+  loss.innerHTML = "Losses: " + losses;
+  guesses.innerHTML = "Guesses Left: " + guess;
+  letter.innerHTML = "Your Guesses so far: " + letters;
 }
 
 function newGoal() {
-  document.querySelector("#letters").innerHTML = "Your Guesses so far: " + letters;
+  letters = [];
+  guess = 9;
+  guesses.innerHTML = "Guesses Left: " + guess;
+  letter.innerHTML = "Your Guesses so far: " + letters;
   goal = alphabet[Math.floor((Math.random() * 26)+ 0)];
+  console.log(goal);
 }
 
 renderGame();
@@ -32,24 +39,18 @@ document.onkeyup = function(event) {
    if (alphabet.indexOf(input) > -1) {
     letters.push(input);
     guess--;
-    document.querySelector("#guesses").innerHTML = "Guesses Left: " + guess;
-    document.querySelector("#letters").innerHTML = "Your Guesses so far: " + letters;
+    guesses.innerHTML = "Guesses Left: " + guess;
+    letter.innerHTML = "Your Guesses so far: " + letters;
 
     if (guess > 0) {
       if (input === goal) {
         win++;
-        document.querySelector("#wins").innerHTML = "Wins: " + win;
-        guess = 9;
-        document.querySelector("#guesses").innerHTML = "Guesses Left: " + guess;
-        letters = [];
+        wins.innerHTML = "Wins: " + win;
         newGoal();
       } 
     } else if (guess === 0) {
       losses++;
-      document.querySelector("#loses").innerHTML = "Losses: " + losses;
-      guess = 9;
-      document.querySelector("#guesses").innerHTML = "Guesses Left: " + guess;
-      letters = [];
+      loss.innerHTML = "Losses: " + losses;
       newGoal();
     }
   }
