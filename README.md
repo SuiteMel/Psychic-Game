@@ -1,39 +1,9 @@
 # https://suitemel.github.io/Psychic-Game/
 
-## Welcome to GitHub Pages
+## Psychic Game
 
-You can use the [editor on GitHub](https://github.com/SuiteMel/Psychic-Game/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+In this project the user tries to guess what letter has been randomly chosen by the game by selecting keys on the keyboard. You have 9 guesses to get it right, and if you get it you're psychic! You will also get a new letter. If you don't guess the correct the letter you lose and get a new letter.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Why Make the Psychic Game
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SuiteMel/Psychic-Game/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The psychic game was a test of my ability to use Javascript. I was able to impliment events, functions, arrays and dom manipulation to successfully meet the goals of creating this game.
