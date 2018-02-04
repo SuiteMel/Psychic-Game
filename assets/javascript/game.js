@@ -13,7 +13,7 @@ var goal;
 var wins = document.querySelector("#wins");
 var loss = document.querySelector("#loses");
 var guesses = document.querySelector("#guesses");
-var letter = document.querySelector("#letters")
+var letter = document.querySelector("#letters");
 
 function renderGame() {
   wins.innerHTML = "Wins: " + win;
